@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txID" type="id" />
+    <item name="txEmailReg" type="id" />
+    <item name="txUsernameReg" type="id" />
+    <item name="txPasswordReg" type="id" />
+    <item name="btnRegister" type="id" />
+    <item name="tvRegister" type="id" />
+</resources>

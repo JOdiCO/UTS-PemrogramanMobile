@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/txtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul Buku"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txtJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/txtBookAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/txtHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"/>
+
+            <TextView
+                android:id="@+id/tvBayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayar"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/txtBayar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/txStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBayar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="Bayar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="Update Data"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:visibility="gone"/>
+
+</RelativeLayout>
